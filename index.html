@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Flappy bird</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: Helvetica, sans-serif;
+            transition: all 0.4s ease-in  
+           }
+        body {
+            background: #272B30;
+        }
+
+        .container {
+            width: 480px;
+            height: 640px;
+            margin: 0 auto;
+        }
+        header {
+            padding: 26px 12px;
+            background: #3A3F44;
+            font-size: 21px;
+            color: #fff;
+            text-align: center;
+            margin: 26px;
+        }
+        #restart {
+
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: #222;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column
+        }
+        h2 {
+            color: #fff;
+            padding: 28px 38px;
+        }
+        a{
+            text-decoration: none;
+            color: #111;
+            font-weight: bold;
+            border: 1px solid gold;
+            background: gold;
+            padding: 28px 38px;
+        }
+        a:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="restart">
+        <h2 id="score"></h2>
+        <a href="./">RESTART</a>
+    </div>
+    <header>
+        Flappy bird clone, works only in desktop (Press space to start!)
+    </header>
+    <div class="container">
+        <canvas id="canvas"></canvas>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
